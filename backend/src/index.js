@@ -16,7 +16,7 @@ const PORT = process.env.PORT;
 
 // ✅ __dirname fix for ESModules
 const __filename = fileURLToPath(import.meta.url);
-const _dirname = path.dirname(_filename);
+const __dirname = path.dirname(__filename);
 
 app.use(express.json());
 app.use(cookieParser());
